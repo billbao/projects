@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://closerighttabs/locale/browser.dtd">
+
+<overlay id="closeRightTabsOverlay"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<menupopup id="tabContextMenu">
+		<menuitem id="context_closeRightTabs"
+			label="Close Right Tabs"
+			accesskey="r"
+			oncommand="closeRightTabs.removeRightTabsfrom(TabContextMenu.contextTab);"
+			insertafter="context_closeOtherTabs"
+			/>
+	</menupopup>
+
+	<script type="application/javascript" src='chrome://closerighttabs/content/closeRightTabs.js'></script>
+
+</overlay>

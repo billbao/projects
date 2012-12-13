@@ -1,0 +1,5 @@
+content closerighttabs content/
+
+overlay chrome://browser/content/browser.xul  chrome://closerighttabs/content/browser.xul
+
+locale closerighttabs  en locale/en/
